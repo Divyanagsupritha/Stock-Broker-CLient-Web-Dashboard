@@ -1,0 +1,229 @@
+/* Global Page Style */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0f172a; /* Dark background */
+  overflow-x: hidden;  /* Prevent white horizontal scroll */
+}
+
+/* ======== LOGIN PAGE ======== */
+.login-wrapper {
+  height: 100vh;
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: #1e293b;
+  padding: 30px;
+  width: 350px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.app-title {
+  font-size: 32px;
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: white;
+}
+
+.button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #3b82f6;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.switch {
+  color: #60a5fa;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* ======== DASHBOARD ======== */
+.dashboard {
+  background: #0f172a;
+  min-height: 100vh;
+  padding: 20px;
+  color: #e2e8f0;
+  overflow-x: hidden; /* IMPORTANT FIX */
+}
+
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signout-button {
+  padding: 8px 14px;
+  background: #ef4444;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.user-tag {
+  margin-top: 5px;
+  opacity: 0.7;
+}
+
+/* TWO COLUMNS */
+.dashboard-columns {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  height: 80vh;
+  overflow: hidden;
+  max-width: 100%;   /* prevent overflow */
+  box-sizing: border-box;
+}
+
+
+/* ======== MARKET OVERVIEW TABLE ======== */
+.market-overview {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  height: 100%;        /* Match left side to full height */
+  overflow-y: auto;    /* Scroll if too many rows */
+}
+
+.market-overview table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.market-overview th {
+  text-align: left;
+  padding-bottom: 12px;
+  font-weight: bold;
+  color: #94a3b8;
+}
+
+.market-overview td {
+  padding: 14px 0;
+  border-bottom: 1px solid #334155;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.green {
+  color: #22c55e;
+}
+
+.red {
+  color: #ef4444;
+}
+
+.subscribe-btn {
+  background: #22c55e;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+.unsubscribe-btn {
+  background: #ef4444;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+/* ======== PORTFOLIO (FIXED HEIGHT + SCROLLABLE) ======== */
+.portfolio {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.market-overview, .portfolio {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+/* Scrollbar styles */
+.portfolio::-webkit-scrollbar {
+  width: 6px;
+}
+
+.portfolio::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+.portfolio-card {
+  background: #0f172a;
+  padding: 18px;
+  margin-top: 18px;
+  border-radius: 12px;
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  font-size: 20px;
+  color: #60a5fa;
+}
+
+/* Sparkline improvements */
+svg {
+  margin-top: 10px;
+}
+
+svg polyline {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.sparkline-container {
+  width: 100%;
+  height: 100px;              /* Controls graph height */
+  margin-top: 15px;
+}
+
+.sparkline-container svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+
